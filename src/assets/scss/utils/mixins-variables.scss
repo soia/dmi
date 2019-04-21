@@ -1,0 +1,64 @@
+// Colors
+$bgColor: #f7f7f7;
+$white: #fff;
+$black: #000;
+$dark: #1f1f1f;
+$grey: #454751;
+$lightGrey: #919aa3;
+$blue: #273f96;
+
+// Fonts
+
+$regularFont: 'FuturaPT', sans-serif;
+$boldFont: 'FuturaPTBold', sans-serif;
+$normal: 400;
+$medium: 700;
+$bold: 900;
+
+
+// Mixins
+
+@mixin btn-grey { 
+    border: 1px solid $lightGrey;
+    font-family: $boldFont;
+    color: $lightGrey;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 242px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 150px;
+    text-transform: uppercase;
+    display: inline-block;
+    text-decoration: none;
+    pointer-events: none;
+    user-select: none;
+}
+
+@mixin btn-blue { 
+    font-family: $boldFont;
+    background-color: $blue;
+    color: $white;
+    font-size: 14px;
+    letter-spacing: 1px;
+    width: 242px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-radius: 150px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    user-select: none;
+    transition: all 0.25s;
+    border: 1px solid $blue;
+    cursor: pointer;
+
+    &:hover {
+        background-color: transparent;
+        color: $blue;
+    }
+}

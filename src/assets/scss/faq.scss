@@ -1,0 +1,178 @@
+.faq {
+    margin: 20px 0 20px 265px;
+    color: $grey;
+    font-family: $boldFont;
+    font-weight: $medium;
+    font-size: 60px;
+    line-height: 60px;
+    text-transform: uppercase;
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) { 
+        margin: 20px 0 20px 88px;
+        font-size: 48px;
+        line-height: 48px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        font-size: 32px;
+        line-height: 32px;
+        margin: 20px 0 20px 45px;
+    }
+
+    &__body {
+        background-color: $bgColor;
+    }
+}
+
+body .accordion {
+    padding: 0 133px;
+
+    @media screen and (min-width: 768px) and (max-width: 1300px) { 
+        padding: 0 88px;
+    }
+
+    @media screen and (max-width: 767px) { 
+        padding: 0 45px;
+    }
+
+    .ui-accordion-header-collapsed:after {
+        transform: rotate(180deg);
+        top: 35%;
+    }
+
+    .ui-state-default {
+        background-color: $bgColor;
+        color: $lightGrey;
+        font-family: $regularFont;
+        font-weight: $medium;
+        outline: none;
+        height: 80px;
+        border: none;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        font-size: 24px;
+        padding-left: 135px;
+        align-items: center;
+        display: flex;
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            padding-left: 88px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            font-size: 16px;
+            padding: 8px 33px 8px 50px;
+        }
+    }
+
+    .ui-state-active {
+        background-color: $blue;
+        color: $white;
+        border: none;
+    }
+
+    .ui-icon {
+        position: absolute;
+        left: 27px;
+        top: 50%;
+
+        @media screen and (max-width: 767px) { 
+            left: 20px;
+        }
+    }
+
+    .ui-state-hover {
+        background-color: $blue;
+        color: $white;
+        transition: all 0.25s;
+    }
+
+    .ui-accordion-header-collapsed {
+        &:hover {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+    }
+
+    .ui-accordion-header-collapsed {
+
+        &:hover {
+            .ui-icon {
+                background-image: url(../img/faq/plus-white.svg) !important;
+                background-position: center center;
+            }
+
+        }
+    }
+
+    .ui-accordion-header-collapsed .ui-icon-plus {
+        background-image: url(../img/faq/plus-grey.svg) !important;
+        background-position: center center;
+    }
+
+    .ui-accordion-content {
+        background-color: #f7f7f7;
+        padding: 16px 135px 40px 135px;
+
+        @media screen and (min-width: 768px) and (max-width: 1300px) { 
+            padding: 16px 88px 40px 88px;
+        }
+
+        @media screen and (max-width: 767px) { 
+            padding: 16px 50px 40px 50px;
+        }
+    }
+
+    .ui-accordion-content-active {
+        background-color: $blue;
+        color: $white;
+        font-family: $regularFont;
+        color: $white;
+        border: none;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        font-size: 20px;
+        line-height: 24px;
+
+        @media screen and (max-width: 767px) {
+            font-size: 14px;
+        }
+    }
+
+    .accordion__title:after {
+        content: url(../img/faq/chevron-down-grey.svg);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 41px;
+
+        @media screen and (max-width: 767px) {
+            right: 20px;
+        }
+    }
+
+    .accordion__title {
+        &:hover {
+            &:after {
+                content: url(../img/faq/chevron-down-white.svg);
+            }
+        }
+    }
+
+    .ui-state-active:after {
+        content: url(../img/faq/chevron-down-white.svg);
+        position: absolute;
+        top: 50%;
+        top: 50%;
+        transform: translateY(-50%) rotate(180deg);
+        right: 41px;
+
+        @media screen and (max-width: 767px) {
+            right: 20px;
+        }
+    }
+
+    .ui-accordion-header {
+        margin: 20px 0 0 0 !important;
+    }
+}

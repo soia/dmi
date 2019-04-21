@@ -1,0 +1,32 @@
+.footer {
+    background-image: linear-gradient(#235a81 0%, #265c7f 50%, #2e6389 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 33px 125px 33px 90px;
+
+    &_leftSide {
+        p {
+            color: #ffffff;
+            font-family: "HelveticaRegular";
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 14px;
+        }
+    }
+
+    &_rightSide {
+        a {
+            color: #ffffff;
+            font-family: "HelveticaRegular";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            text-decoration: none;
+
+            &:first-child {
+                margin-right: 40px;
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin: 35px 90px 0 70px;
+    position: relative;
+    z-index: 1;
+
+    &__leftSide {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+
+            li {
+                a {
+                    color: #3e3e3e;
+                    font-family: "HelveticaRegular";
+                    font-size: 14px;
+                    font-weight: 400;
+                    letter-spacing: -0.14px;
+                    line-height: 16px;
+                    text-decoration: none;
+                    transition: all 0.25s;
+
+                    &:hover {
+                        color: #2B6186;
+                    }
+                }
+
+                &:not(:last-child) {
+                    margin-right: 40px;
+                }
+            }
+        }
+    }
+
+    &__rightSide {
+        display: flex;
+        align-items: center;
+
+        ul {
+            display: flex;
+            align-items: center;
+
+            li:first-child {
+                a {
+                    color: #3e3e3e;
+                    transition: all 0.25s;
+
+                    &:hover {
+                        color: #2B6186;
+                    }
+                }
+            }
+
+            li:last-child {
+                width: 150px;
+                height: 51px;
+                border-radius: 25px;
+                background-color: #2c6186;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 55px;
+                cursor: pointer;
+                transition: all 0.25s;
+                opacity: 0.9;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                a {
+                    color: #ffffff;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+
+            a {
+                font-family: "HelveticaRegular";
+                font-size: 12px;
+                font-weight: 400;
+                letter-spacing: -0.12px;
+                line-height: 14px;
+                text-decoration: none;
+            }
+        }
+
+        .custom-select {
+            color: #3e3e3e;
+            font-family: "HelveticaRegular";
+            font-size: 12px;
+            font-weight: 400;
+            letter-spacing: -0.12px;
+            line-height: 14px;
+        }
+    }
+}
